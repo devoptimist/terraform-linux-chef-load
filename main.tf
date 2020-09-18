@@ -26,8 +26,8 @@ locals {
 }
 
 module "load-chef-load" {
-  source            = "devoptimist/habitat/chef"
-  version           = "0.0.3"
+  source            = "srb3/habitat/chef"
+  version           = "0.13.0"
   ips               = var.ips
   instance_count    = local.instance_count
   user_name         = var.ssh_user_name
